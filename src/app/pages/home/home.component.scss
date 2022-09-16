@@ -1,0 +1,31 @@
+.home{
+    display: flex;
+    width:100%;
+    height: 100vh;
+    background-image: url('../../../assets/imgs/voxed-vende-humo.gif');
+    background-size: 100%;
+    margin:0px;
+
+    //background-image: url('../../../assets/imgs/Game-of-Thrones.jpg');
+
+}
+.gotItem-house{
+    position:absolute;
+    text-align: center;
+    background: none;
+    font-size: 10rem;
+    top:30%;
+    left: 1%;
+    right:1%;
+    margin: 0 auto;
+    z-index: 1;
+    background: url('../../../assets/imgs/voxed-vende-humo.gif');
+    background-size: contain;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.imgHome{
+    position: fixed;
+}
+//background-image: url("../../../assets/imgs/Game-of-Thrones.jpg");

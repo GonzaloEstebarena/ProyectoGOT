@@ -1,0 +1,14 @@
+<div class="app-houses">
+    <ngx-simplebar  [options]="options">
+     <!-- <img class="loader" src="http://www.reactiongifs.com/wp-content/uploads/2013/07/ralph-wave.gif"/>-->
+    <div  class="houses">
+    <div class="houseItem" *ngFor="let item of house, index as iHouses">
+          <img *ngIf="item['logoURL']" routerLink="/houses/{{item['name']}}" src="{{ item['logoURL'] }}" alt="{{ item['name'] }}" />
+          <img *ngIf="!item['logoURL']" routerLink="/houses/{{item['name']}}" src="../../../assets/imgs/image-default.gif" alt="{{ item['name'] }}" />
+          <h3>{{item['name']}}</h3>
+    </div>
+    </div>
+    </ngx-simplebar>
+  </div>
+
+  

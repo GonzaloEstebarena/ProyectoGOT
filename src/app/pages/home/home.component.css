@@ -1,0 +1,9 @@
+.body {
+  width: 88%;
+  height: 44.8rem;
+  background-image: url("../../../assets/imgs/Game-of-Throne2.jpg");
+  background-position: center;
+  background-size: cover;
+  transform: scale(1.33);
+  margin: 0px;
+}/*# sourceMappingURL=home.component.css.map */

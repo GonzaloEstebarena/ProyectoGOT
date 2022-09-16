@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: lato;
+  src: url(../assets/fonts/Game-of-Thrones.ttf) format("opentype");
+}
+body {
+  font-family: lato;
+  background-color: black;
+  margin: 0px;
+}/*# sourceMappingURL=styles.css.map */

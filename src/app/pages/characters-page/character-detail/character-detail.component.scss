@@ -1,0 +1,52 @@
+.appCharDetail{
+    color: aliceblue;
+}
+.char-card{
+    margin-top: 2%;
+    text-align: center;
+    img{
+        object-fit:cover;
+        object-position: top;
+        overflow: hidden;
+        width: 250px;
+        height: 250px;
+        border-radius: 10px;
+    }
+
+}
+p{
+    font-size: 13px;
+    padding-top: 1rem;
+}
+.char-info{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 20px;
+}
+.char-info-item{
+    min-width: 180px;
+    img{
+        width:100px;
+    }
+}
+
+ngx-simplebar {
+    width: 20rem;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    margin: 2px;
+}
+
+
+.goHome{
+    width:70px;
+    margin-left: 83%;
+    margin-top: 1.2%;
+    margin-bottom: 0;
+}
+.goHome:hover{
+    width:71px;
+
+}

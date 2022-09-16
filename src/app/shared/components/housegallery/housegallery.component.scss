@@ -1,0 +1,38 @@
+.app-houses{
+    margin: 5%;
+    
+}
+.houses{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:0%;
+
+    
+}
+
+.houseItem{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    margin: 2%;
+    color: aliceblue;
+    text-align: center;
+    max-width: 155px;
+
+    img{
+        max-width: 150px;
+    }
+}
+.houseItem:hover{
+    cursor: pointer;
+}
+
+ngx-simplebar {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    width: 95%;
+    height: 62vh;
+    display: flex;
+    justify-content: center;
+  }

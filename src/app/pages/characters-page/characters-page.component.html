@@ -1,0 +1,7 @@
+<img class="loader" *ngIf="isLoading" src="https://i.gifer.com/7NcB.gif">
+<input class="searchCharac" type="text" placeholder="Buscar personaje" (keyup)="search($event)"/>
+<img class="goHome" routerLink="/"  src="../../../assets/imgs/744_Evergreen_Terrace.webp" alt="volver al home"/>
+<app-charactergallery [characterGot]="characterGot"></app-charactergallery>
+
+
+  

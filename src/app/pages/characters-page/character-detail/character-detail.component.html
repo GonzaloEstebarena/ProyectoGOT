@@ -1,0 +1,46 @@
+<img class="goHome" routerLink="/"  src="../../../assets/imgs/744_Evergreen_Terrace.webp" alt="volver al home"/>
+<div class="appCharDetail">
+    <div class="char-card">
+        <img *ngIf="character['image']" src="{{character['image']}}" alt="{{character.name}}"/>
+        <img *ngIf="!character['image']" src="../../../../assets/imgs/image-default.gif" alt="{{character.name}}"/>
+        <h2>{{character['name']}}</h2>
+    </div>
+    <div class="char-info">
+        <div class="char-info-item">
+            <h3>CASA</h3>
+            <img *ngIf="house.logoURL" src="{{house.logoURL}}" alt="{{character['house']}}"><!--importar servicio con la funcion gethouses para usarlo luego ngif characer.house === house.name src house.image-->
+            <img *ngIf="!house.logoURL" src="../../../../assets/imgs/image-default.gif" alt="{{character['house']}}">
+            <p>{{character['house']}}</p>
+        </div>
+        <div >
+            <h3>ALIANZAS</h3>
+            <p *ngFor="let allegiance of character['allegiances']">{{allegiance}}</p>
+        </div>
+        <div class="char-info-item">
+            <h3>APARICIONES</h3>
+            <ngx-simplebar  [options]="options">
+                <div *ngFor="let appearance of character['appearances']">
+                <p>{{appearance}}</p>
+                </div>
+            </ngx-simplebar>
+        </div>
+        <div class="char-info-item">
+            <h3>PROGENITORES</h3>
+            <p *ngIf="character['mother']">Madre: {{character['mother']}}</p>
+            <p *ngIf="character['father']">Padre: {{character['father']}}</p>
+            <p *ngIf="!character['father'] && !character['mother']">EN EL ESTANCO</p>
+        </div>
+        <div class="char-info-item">
+            <h3>HERMANOS</h3>
+            <p *ngFor="let sibling of character['siblings']">{{sibling}}</p>
+        </div>
+        <div class="char-info-item">
+            <h3>TITULOS</h3>
+            <ngx-simplebar  [options]="options">
+                <div *ngFor="let title of character['titles']">
+                <p>{{title}}</p>
+                </div>
+            </ngx-simplebar>
+        </div>
+    </div>
+</div>

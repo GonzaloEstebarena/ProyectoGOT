@@ -1,0 +1,73 @@
+.text{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+ngx-simplebar {
+    width: 40rem;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    margin: 2px;
+}
+
+.gallery{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+.image{
+width: 5rem;
+height: 5rem;
+    border-radius: 100%;
+}
+.middle{
+ 
+  display: flex;
+  flex-direction: column;
+ 
+}
+.impar {
+    border: solid white 3px;
+left: 45%;
+
+position: relative;
+display: block;
+border-right: none;
+
+}
+.par{
+   position: relative;
+    display: block;
+    left: 0%;
+    border: solid white 3px;
+    border-left: none;
+}
+.son{ display: flex;
+    flex-direction: column;
+    justify-content: center;
+   padding: 3rem;
+   max-width: 12rem;
+   min-height: 12rem; 
+   margin-bottom: -9.3rem;
+}
+.circulo{
+    border:solid white 2px;
+    border-radius: 50%;
+    width: 10%;
+    display: flex;
+    margin-left: 40%;
+    justify-content: center;
+}
+
+.goHome{
+    width:70px;
+    margin-left: 83%;
+    margin-top: 1.2%;
+    margin-bottom: 0;
+}
+.goHome:hover{
+    width:71px;
+
+}

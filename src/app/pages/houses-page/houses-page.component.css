@@ -1,0 +1,13 @@
+.houseItem {
+  margin: 2%;
+  flex-direction: row;
+}
+.houseItem img {
+  width: 150px;
+}
+
+.houses {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15%;
+}/*# sourceMappingURL=houses-page.component.css.map */

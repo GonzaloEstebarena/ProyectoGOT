@@ -1,0 +1,17 @@
+<div class="app-char">
+    <ngx-simplebar  [options]="options">
+      <img class="loader" *ngIf="isLoading" src="http://www.reactiongifs.com/wp-content/uploads/2013/07/ralph-wave.gif"/>
+    <div class="gallery">
+    <div class="container" *ngFor="let item of characterGot,let i= index">
+
+      <img *ngIf="item['image']" routerLink="/characters/{{item['name']}}" class="image"   src="{{ item['image'] }}" alt="{{ item['name'] }}" />
+      <img *ngIf="!item['image']" routerLink="/characters/{{item['name']}}" class="image" src="../../../assets/imgs/image-default.gif" alt="{{ item['name'] }}" />
+      <div class="middle">
+        <div class="text">{{ item["name"] }}</div>
+      </div>
+    </div>
+    </div>
+  </ngx-simplebar>
+  </div>
+  
+  

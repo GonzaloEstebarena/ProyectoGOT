@@ -1,0 +1,17 @@
+<img class="loader" *ngIf="isLoading" src="https://i.gifer.com/7NcB.gif">
+<input class="searchHouse" type="text" placeholder="Buscar Casa..." (keyup)="serchHouse($event)"/>
+<img class="goHome" routerLink="/"  src="../../../assets/imgs/744_Evergreen_Terrace.webp" alt="volver al home"/>
+<app-housegallery [house]="houses"></app-housegallery>
+<!--
+    <ng-template [ngIf]="item['logoURL']" [ngIfElse]="housesDefault">
+      <img src="{{ item['logoURL'] }}" alt="{{ item['name'] }}" />
+    </ng-template>
+    <ng-template #housesDefault>
+      <img [src]="housesDefault" alt="{{ item['name'] }}" />
+    </ng-template>
+
+    <div class="houseItem" *ngFor="let item of houses">
+        <img src="{{item['logoURL']}} " alt="{{item['name']}}">
+        <h4>{{item['name']}}</h4>
+    </div>
+-->

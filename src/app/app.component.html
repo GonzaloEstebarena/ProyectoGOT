@@ -1,0 +1,32 @@
+
+
+<header class="header">
+ 
+  <img value='es-ES'  (click)="selectLenguage('es-ES')"   class="navBar"  src="../../../assets/imgs/Bandera_de_España.svg.png" alt="Cambiar idioma a español"/>
+
+
+  <img value = 'eng-Eng ' (click)="selectLenguage('eng-Eng')"  class="navBar"  src="../../../assets/imgs/Bandera-del-Reino-Unido-760x400.png" alt="Change language to english"/>
+
+    
+  
+</header>
+
+<footer class="footer">
+
+    <div class="footerItem">
+      <a routerLink="/characters" class="navBar" routerLinkActive="active">{{"characters"|translate}}</a>
+    </div>
+    <div class="footerItem">
+      <a routerLink="/houses" class="navBar" routerLinkActive="active">{{"houses"|translate}}</a>
+    </div>
+    <div class="footerItem">
+      <a routerLink="/cronology" class="navBar" routerLinkActive="active">{{"chronology"|translate}}</a>
+    </div>
+    
+ 
+</footer>
+<router-outlet></router-outlet>
+
+
+
+

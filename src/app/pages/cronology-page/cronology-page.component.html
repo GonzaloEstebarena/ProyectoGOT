@@ -1,0 +1,29 @@
+
+<img class="goHome" routerLink="/"  src="../../../assets/imgs/744_Evergreen_Terrace.webp" alt="volver al home"/>
+<div class="gallery">
+  <ngx-simplebar  [options]="options">
+    <div (click)="reverse()" class="circulo">
+      <h2 class="text">0</h2>
+     </div>
+  <div class="container" *ngFor="let item of characterGot,let i= index">
+    <!--<div (click)="reverseOrd()">0</div>--> 
+    
+      <div *ngIf="i%2!=0" class="middle ">
+        <div class="son impar">
+        <div class="text">{{ item["name"] }}{{ item["age"]["age"] }}</div>
+        <img *ngIf="item['image']" class="image" src="{{ item['image'] }}" alt="{{ item['name'] }}"/>
+        <img *ngIf="!item['image']" class="image" src="../../../assets/imgs/image-default.gif" alt="{{ item['name'] }}"/>
+      </div>
+    </div>
+      <div *ngIf="i%2==0" class="middle ">
+        <div class="son par">
+        <div class="text">{{ item["name"] }}{{ item["age"]["age"] }}</div>
+        <img *ngIf="item['image']" class="image" src="{{ item['image'] }}" alt="{{ item['name'] }}"/>
+        <img *ngIf="!item['image']" class="image" src="../../../assets/imgs/image-default.gif" alt="{{ item['name'] }}"/>
+      </div>
+    </div>
+    
+    </div>
+  </ngx-simplebar>
+  </div>
+  

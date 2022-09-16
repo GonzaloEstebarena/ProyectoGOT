@@ -1,0 +1,38 @@
+<img class="goHome" routerLink="/"  src="../../../assets/imgs/744_Evergreen_Terrace.webp" alt="volver al home"/>
+<div class="appHouseDetail">
+    <div class="house-card">
+        <img *ngIf="house['logoURL']" src="{{house['logoURL']}}" alt="{{house['name']}}"/>
+        <img *ngIf="!house['logoURL']" src="../../../../assets/imgs/image-default.gif" alt="{{house['name']}}"/>
+        <h2>{{house['name']}}</h2>
+    </div>
+    <div class="house-info">
+    <div class="house-info-item">
+        <h3>LEMA</h3>
+        <p>{{house['words']}}</p>
+    </div>
+    <div class="house-info-item">
+        <h3>SEDE</h3>
+        <p>{{house['seat']}}</p>
+    </div>
+    <div class="house-info-item">
+        <h3>REGION</h3>
+        {{house['region']}}
+    </div>
+    <div class="house-info-item">
+        <h3>ALIANZAS</h3>
+        <div *ngFor="let ally of house['alliegiance']">
+            <p>{{ally}}</p>
+        </div>
+    </div>
+    <div class="house-info-item">
+        <h3>RELIGIONES</h3>
+        <div *ngFor="let reli of house['religion']">
+            <p>{{reli}}</p>
+        </div>
+    </div>
+    <div class="house-info-item">
+        <h3>FUNDACION</h3>
+        <p>{{house['createdAt']| date:"YYYY/MM/dd"}}</p>
+    </div>
+    </div>
+</div>
